@@ -3,7 +3,10 @@ import PackageDescription
 
 let package = Package(
     name: "WebRTC",
-    platforms: [.iOS(.v10)],
+    platforms: [
+        .iOS(.v10),
+        .macOS(.v11)
+    ],
     products: [
         .library(
             name: "WebRTC",
